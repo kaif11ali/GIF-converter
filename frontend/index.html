@@ -9,5 +9,274 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <footer className="modern-footer">
+      <div className="footer-container">
+        {/* Main Footer Content */}
+        <div className="footer-main">
+          <div className="footer-brand">
+            <h2>AIO Converter</h2>
+            <p>Professional all-in-one media converter for creating, converting, and optimizing your files with ease.</p>
+            <div className="footer-features">
+              <span className="feature-badge">✓ 100% Local Processing</span>
+              <span className="feature-badge">✓ Privacy Focused</span>
+              <span className="feature-badge">✓ No File Limits</span>
+            </div>
+          </div>
+
+          <div className="footer-sections">
+            <div className="footer-section">
+              <h4>Converters</h4>
+              <ul>
+                <li>Image Converter</li>
+                <li>Video to GIF</li>
+                <li>PDF to Markdown</li>
+                <li>WebP Converter</li>
+                <li>APNG Creator</li>
+              </ul>
+            </div>
+
+            <div className="footer-section">
+              <h4>Tools</h4>
+              <ul>
+                <li>Image Resizer</li>
+                <li>Image Cropper</li>
+                <li>GIF Optimizer</li>
+                <li>File Compressor</li>
+                <li>Format Converter</li>
+              </ul>
+            </div>
+
+            <div className="footer-section">
+              <h4>Support</h4>
+              <ul>
+                <li>Help Center</li>
+                <li>User Guide</li>
+                <li>FAQ</li>
+                <li>Contact Support</li>
+                <li>Report Issue</li>
+              </ul>
+            </div>
+
+            <div className="footer-section">
+              <h4>Resources</h4>
+              <ul>
+                <li>API Documentation</li>
+                <li>Tutorials</li>
+                <li>Best Practices</li>
+                <li>Format Guide</li>
+                <li>Tips & Tricks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="footer-bottom">
+          <div className="footer-bottom-content">
+            <div className="copyright">
+              <p>&copy; 2024 AIO Converter. All rights reserved.</p>
+              <p className="tagline">Empowering creators with secure, local media processing</p>
+            </div>
+            <div className="footer-stats">
+              <div className="stat">
+                <span className="stat-number">1M+</span>
+                <span className="stat-label">Files Processed</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Formats Supported</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">Privacy Secure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+
+<style>
+/* Modern Professional Footer */
+.modern-footer {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #ffffff;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-main {
+  padding: 60px 20px 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer-brand h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: linear-gradient(45deg, #64b5f6, #90caf9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-brand p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e3f2fd;
+  margin-bottom: 24px;
+  max-width: 300px;
+}
+
+.footer-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #e3f2fd;
+  width: fit-content;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #90caf9;
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(45deg, #64b5f6, #90caf9);
+  border-radius: 1px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  padding: 6px 0;
+  color: #bbdefb;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 16px;
+}
+
+.footer-section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #64b5f6;
+}
+
+.footer-section li:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer-section li:hover::before {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  color: #bbdefb;
+  font-size: 14px;
+}
+
+.tagline {
+  font-size: 12px !important;
+  color: #90caf9 !important;
+  margin-top: 4px !important;
+  font-style: italic;
+}
+
+.footer-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #64b5f6;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 11px;
+  color: #90caf9;
+}
+</style>
